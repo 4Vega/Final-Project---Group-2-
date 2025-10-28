@@ -1,0 +1,34 @@
+// Style sheet //
+
+body {
+  font_family: arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #222;
+}
+
+header, footer {
+  background-color: #1a1a2e;
+  color: white; 
+  text-align: center;
+  padding: 1rem 0;
+}
+
+main{
+  padding: 20px;
+}
+
+h1, h2 {
+  color: #0057b7;
+}
+
+a{
+  color:; 
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
