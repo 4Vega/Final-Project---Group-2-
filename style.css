@@ -32,3 +32,33 @@ a:hover {
   text-decoration: underline;
 }
 
+nav ul{
+  list-style-type:none;
+  background-color: #1a1a2e;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: ceter;
+}
+
+nav li{
+  display: inline-block;
+}
+
+nav a {
+  color: white;
+  padding: 14px 20px;
+  display: inline-block;
+}
+
+nav a: hover {
+  background-color: #007acc;
+}
+
+main{
+  max-width: 800px;
+  margin:30px auto:
+  padding: 20px;
+  border-radius: 9px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
