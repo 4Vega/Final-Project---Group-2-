@@ -6,6 +6,7 @@ body {
   padding: 0;
   background-color: #f4f4f9;
   color: #222;
+  transition: background-color 0.3s case;
 }
 
 header, footer {
@@ -17,12 +18,27 @@ header, footer {
 
 main{
   padding: 20px;
+  margin: 3030px auto; 
+  padding: 20px;
+  border-radius: 9px; 
+  background: white;
+  box-shadow: 0 0 8px rgba90,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+main: hover{ 
+  transform)1.01);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
 }
 
 h1, h2 {
   color: #0057b7;
 }
 
+h1:hover, h2:hover{
+  color: #007acc;
+}
+  
 a{
   color:; 
   text-decoration: none;
@@ -30,6 +46,7 @@ a{
 
 a:hover {
   text-decoration: underline;
+  color: #003f8f;
 }
 
 nav ul{
@@ -49,10 +66,12 @@ nav a {
   color: white;
   padding: 14px 20px;
   display: inline-block;
+  transition: background-color 0.3s ease, transform0.2s ease;
 }
 
 nav a: hover {
   background-color: #007acc;
+  transform: tranlateY(-2px);
 }
 
 main{
