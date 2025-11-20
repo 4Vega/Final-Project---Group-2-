@@ -3,50 +3,86 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cybersecurity Basics- Home</title>
-    <link rel="stylesheet" href= "style.css">
+    <title>Cybersecurity Basics - Home</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header>
-      <h1>Cybersecurity Basics</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="careers.html">Careers</a></li>
-          <li><a href="resources.html">Resources</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+    <header class="hero">
+      <div class="container">
+        <h1>Cybersecurity Basics</h1>
+        <p>Learn how to stay safe online and protect your digital life</p>
+        <a href="#tips" class="btn">Get Started</a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <seciton>
-        <h2>Welcome to Cybersecurity Basics</h2>
-        <p>
-          This site was created to help beginners understand how to stay safe online and 
-          learn more about IT and cybersecurity careers. Wether you're a student, a parent, 
-          or just curious about how the internet works behind the scenes, we've got simple, 
-          beginner-friendly information to get you started.
-        </p>
-        <p>
-          Explore our pages to learn about password safety, phishing scams, safe browsing,
-          and trusted tools that can help protect you're privacy.
-        </p>
-      </seciton>
+      <section class="intro">
+        <div class="container">
+          <h2>Welcome to Cybersecurity Basics</h2>
+          <p>
+            This site is designed for beginners to understand how to stay safe online and learn about IT and cybersecurity careers. Whether you're a student, parent, or curious about the internet, we provide simple, beginner-friendly guides to get you started.
+          </p>
+        </div>
+      </section>
 
-      <seciton>
-        <h3>Quick Tips for Online Safety</h3>
-        <ul>
-          <li>Use strong, unique passwords for every account.</li>
-          <li>Don't click suspicious links or download unknown attatchments.</li>
-          <li>Keep your software and devices up to date.</li>
-        </ul>
-      </seciton>
+      <section id="tips" class="cards-section">
+        <div class="container">
+          <h3>Quick Tips for Online Safety</h3>
+          <div class="cards">
+            <div class="card">
+              <h4>Password Safety</h4>
+              <p>Create strong, unique passwords and use a password manager.</p>
+            </div>
+            <div class="card">
+              <h4>Think Before You Click</h4>
+              <p>Avoid suspicious links and unknown attachments to prevent phishing.</p>
+            </div>
+            <div class="card">
+              <h4>Keep Software Updated</h4>
+              <p>Always update your devices and applications to fix security vulnerabilities.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq">
+        <div class="container">
+          <h3>Common Questions</h3>
+          <div class="faq-item">
+            <button class="faq-question">What is phishing?</button>
+            <div class="faq-answer">Phishing is when attackers try to trick you into giving personal info like passwords or credit cards.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">How can I secure my accounts?</button>
+            <div class="faq-answer">Use strong passwords, enable 2FA, and regularly check for suspicious activity.</div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-      <p> 2025 Cybersecurity Basics | Created by Group 2: Miguel, Angie, and Angel</p>
+      <div class="container">
+        <p>2025 Cybersecurity Basics | Created by Group 2: Miguel, Angie, and Angel</p>
+      </div>
     </footer>
+
+    <script>
+      const faqButtons = document.querySelectorAll('.faq-question');
+      faqButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const answer = btn.nextElementSibling;
+          answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        });
+      });
+    </script>
   </body>
 </html>
