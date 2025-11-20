@@ -55,6 +55,7 @@ nav a {
   padding: 10px 16px;
   display: inline-block;
   border-radius: 5px;
+  text-decoration: none;
   transition: background-color 0.3s, transform 0.2s;
 }
 
@@ -138,6 +139,129 @@ footer {
   text-align: center;
   padding: 20px 0;
   margin-top: 40px;
+}
+
+/* New sections */
+
+.threats-section,
+.protect-section,
+.quiz-section,
+.tools-section {
+  margin-top: 40px;
+}
+
+.threats-section h3,
+.protect-section h3,
+.quiz-section h3,
+.tools-section h3 {
+  text-align: center;
+  color: #0057b7;
+}
+
+.threats-section p,
+.protect-section p,
+.tools-section p,
+.quiz-section p {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 15px;
+}
+
+/* Common threats layout */
+
+.threat-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.threat-card {
+  background: white;
+  border-radius: 12px;
+  padding: 16px 20px;
+  width: 260px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.threat-card h4 {
+  margin-top: 0;
+  color: #007acc;
+}
+
+/* Protect yourself list */
+
+.protect-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.protect-list li {
+  background: white;
+  margin-bottom: 10px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+/* Quiz section */
+
+.quiz-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.quiz-card {
+  background: white;
+  border-radius: 12px;
+  padding: 18px 20px;
+  width: 280px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.quiz-question-text {
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.quiz-options {
+  display: flex;
+  gap: 10px;
+}
+
+.quiz-option {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #f7f7f7;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s, transform 0.2s, border-color 0.2s;
+}
+
+.quiz-option:hover {
+  transform: translateY(-1px);
+}
+
+/* Correct and incorrect states */
+
+.quiz-option.correct {
+  background-color: #c6f6c6;
+  border-color: #2e7d32;
+}
+
+.quiz-option.incorrect {
+  background-color: #ffcdd2;
+  border-color: #c62828;
 }
 
 /* Responsive */
