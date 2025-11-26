@@ -9,6 +9,13 @@ body {
   transition: background-color 0.3s ease;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 header.hero {
   background: linear-gradient(135deg, #1a1a2e, #0057b7);
   color: white;
