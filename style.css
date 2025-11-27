@@ -310,24 +310,21 @@ footer {
 
 
 .video-responsive {
-    /* REQUIRED for centering and setting context */
-    position: relative;
-    max-width: 800px; 
-    margin: 0 auto; /* <-- This is the secondary centering method */
-    
-    /* REQUIRED for 16:9 aspect ratio */
+    position: relative; 
+    width: 100%;       
     padding-bottom: 56.25%; 
-    height: 0; 
-    overflow: hidden;
+    height: 0;         
+    overflow: hidden; 
+    margin-bottom: 30px; 
+    margin-top: 30px; 
 }
 
 .video-responsive iframe {
-    /* REQUIRED to cover the responsive container */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    position: absolute; 
+    top: 0;             
+    left: 0;            
+    width: 100%;        
+    height: 100%;       
 }
 
 
