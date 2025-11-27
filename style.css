@@ -202,6 +202,14 @@ footer {
   margin: 0 auto 15px;
 }
 
+
+.video-section {
+    display: flex;
+    justify-content: center;
+}
+
+
+
 /* Common threats layout */
 
 .threat-grid {
