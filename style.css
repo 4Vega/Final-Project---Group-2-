@@ -312,8 +312,8 @@ footer {
 .video-responsive {
     /* REQUIRED for centering and setting context */
     position: relative;
-    max-width: 800px; /* Or 90% */
-    margin: 0 auto;
+    max-width: 800px; 
+    margin: 0 auto; /* <-- This is the secondary centering method */
     
     /* REQUIRED for 16:9 aspect ratio */
     padding-bottom: 56.25%; 
