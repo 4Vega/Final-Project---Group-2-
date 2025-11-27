@@ -299,6 +299,28 @@ footer {
   border-color: #c62828;
 }
 
+
+
+.video-responsive {
+    position: relative; 
+    width: 100%;       
+    padding-bottom: 56.25%; 
+    height: 0;         
+    overflow: hidden; 
+    margin-bottom: 30px; 
+    margin-top: 30px; 
+}
+
+.video-responsive iframe {
+    position: absolute; 
+    top: 0;             
+    left: 0;            
+    width: 100%;        
+    height: 100%;       
+}
+
+
+
 /* Responsive */
 @media(max-width: 768px) {
   .cards-section .cards {
