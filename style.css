@@ -100,6 +100,34 @@ main {
   box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
 
+.link-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+
+    flex-basis: 250px; 
+    flex-grow: 1;
+    max-width: 250px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.link-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.link-card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 .cards-section h3 {
   text-align: center;
   margin-bottom: 20px;
