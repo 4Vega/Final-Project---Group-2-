@@ -378,3 +378,61 @@ footer {
   margin-bottom: 25px;
   box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
 }
+
+
+#locationMap {
+width:688px;
+margin: 30px auto;
+position: relative
+}
+
+#mapImage {
+display:block
+width:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Aside Styles */
+
+body > aside {
+   float: left;
+   width: 768px;
+}
+
+body > aside > h1 {
+   font-size: 1.5em;
+   margin: 20px;
+}
+
+aside p {
+   line-height: 1.4em;
+   margin: 20px;
+}
+
+
+/* Interactive Map Styles */
+
+div.mapInfo {
+   background-color: rgb(51, 104, 156);
+   color: rgb(214, 192, 144);
+   margin-top: 20px;
+   padding-bottom: 20px;
+}
+
+div.mapInfo h2 {
+   background-color: rgb(255, 255, 255);
+   font-size: 22px;
+   font-weight: normal;
+   padding: 10px 20px;
+}
